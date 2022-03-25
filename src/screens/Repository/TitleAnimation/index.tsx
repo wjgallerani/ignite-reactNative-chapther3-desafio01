@@ -9,7 +9,7 @@ interface TitleAnimationProps {
 }
 
 export function TitleAnimation({ children }: TitleAnimationProps) {
-const { width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   const contentOffset = useSharedValue(0)
   const [textWidth, setTextWidth] = useState(0);
